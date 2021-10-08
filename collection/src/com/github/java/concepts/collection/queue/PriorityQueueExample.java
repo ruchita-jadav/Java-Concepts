@@ -1,6 +1,7 @@
 package com.github.java.concepts.collection.queue;
 
 import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Random;
 
@@ -18,7 +19,7 @@ import java.util.Random;
  */
 public class PriorityQueueExample {
     public static void main(String[] args) {
-        PriorityQueue priorityQueue = new PriorityQueue<>();
+        PriorityQueue priorityQueue = new PriorityQueue<>(12,Comparator.reverseOrder());
 
         // Point : Default capacity vs size. Size is no of elements present in a collection.
         System.out.println(priorityQueue.size());
@@ -59,7 +60,7 @@ public class PriorityQueueExample {
         Random random = new Random();
 
         for (int i = 5; i < 10; i++) {
-            priorityQueue.add(new User(random.nextInt(12)));
+            priorityQueue.add(new User(random.nextInt()));
         }
         for (int i = 0; i < 5; i++) {
             priorityQueue.add(new User(-random.nextInt(12)));

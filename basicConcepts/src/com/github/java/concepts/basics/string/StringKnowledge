@@ -1,0 +1,10 @@
+Source : https://docs.oracle.com/javase/tutorial/java/data/manipstrings.html
+
+* charAt() :
+      get the character at a particular index within a string by invoking this accessor method
+
+* String substring(int beginIndex, int endIndex)
+        Returns a new string that is a substring of this string. The substring begins at the specified beginIndex and extends to the character at index endIndex - 1.
+
+* String substring(int beginIndex)
+    Returns a new string that is a substring of this string. The integer argument specifies the index of the first character. Here, the returned substring extends to the end of the original string.
